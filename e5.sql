@@ -1,0 +1,2 @@
+SELECT A.Name, COUNT(MA.MovieId) AS 'NPart' FROM MOVIE_ACTOR MA, ACTOR A WHERE MA.ActorId = A.ActorId GROUP BY A.Name HAVING NPart >= 15 ORDER BY A.Name;
+ 
